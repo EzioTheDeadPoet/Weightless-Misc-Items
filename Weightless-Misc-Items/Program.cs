@@ -30,8 +30,6 @@ namespace SlotsSlotsSlots
 
         public static void RunPatch(IPatcherState<ISkyrimMod, ISkyrimModGetter> state)
         {
-            float potionWeights = Settings.PotionSlotUse;
-            float scrollWeights = Settings.ScrollSlotUse;
             bool noHealFromWeightless = Settings.WeightlessItemsOfferNoHealing;
 
             (HashSet<IFormLinkGetter<IMagicEffectGetter>> carryWeight, HashSet<IFormLinkGetter<IMagicEffectGetter>> health) magicEffects = MagicEffects(state);
@@ -51,24 +49,11 @@ namespace SlotsSlotsSlots
                 }
             }
 
-            foreach (var m in state.LoadOrder.PriorityOrder.Scroll().WinningOverrides())
-            {
-                if (m.Weight != 0.0f)
-                {
-                    var mn = m.DeepCopy();
-                    mn.Weight = 0.0f;
-                    state.PatchMod.Scrolls.Set(mn);
-                }
-            }
-
             foreach (var ingestible in state.LoadOrder.PriorityOrder.Ingestible().WinningOverrides())
             {
                 var ingestibleCopy = ingestible.DeepCopy();
-                if (ingestible.HasKeyword(Skyrim.Keyword.VendorItemPotion))
-                {
-                    ingestibleCopy.Weight = potionWeights;
-                }
-                else if (!ingestible.EditorID.Equals("dunSleepingTreeCampSap"))
+                if (!ingestible.HasKeyword(Skyrim.Keyword.VendorItemPotion) 
+                && !ingestible.EditorID.Equals("dunSleepingTreeCampSap"))
                 {
                     ingestibleCopy.Weight = 0.0f;
                 }
