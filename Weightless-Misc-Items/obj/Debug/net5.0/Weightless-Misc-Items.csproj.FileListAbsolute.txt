@@ -1,5 +1,0 @@
-C:\Users\aaron-luca.hold\Source\Repos\Weightless-Misc-Items\Weightless-Misc-Items\obj\Debug\net5.0\Weightless-Misc-Items.csproj.AssemblyReference.cache
-C:\Users\aaron-luca.hold\Source\Repos\Weightless-Misc-Items\Weightless-Misc-Items\obj\Debug\net5.0\Weightless-Misc-Items.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\aaron-luca.hold\Source\Repos\Weightless-Misc-Items\Weightless-Misc-Items\obj\Debug\net5.0\Weightless-Misc-Items.AssemblyInfoInputs.cache
-C:\Users\aaron-luca.hold\Source\Repos\Weightless-Misc-Items\Weightless-Misc-Items\obj\Debug\net5.0\Weightless-Misc-Items.AssemblyInfo.cs
-C:\Users\aaron-luca.hold\Source\Repos\Weightless-Misc-Items\Weightless-Misc-Items\obj\Debug\net5.0\Weightless-Misc-Items.csproj.CoreCompileInputs.cache
