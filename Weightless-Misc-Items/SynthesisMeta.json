@@ -1,8 +1,8 @@
 {
     "Nickname": "Weightless Misc Items",
     "Visibility": "Visible",
-    "OneLineDescription": "Focus on the important things.",
-    "LongDescription": "Makes \"useless\" items weightless. \n\n- Luca|EzioTheDeadPoet",
+    "OneLineDescription": "Makes \"useless\" items weightless.",
+    "LongDescription": "Makes \"useless\" items weightless. + Includes optional healing item "hardmode".  \n\n- Luca|EzioTheDeadPoet",
     "PreferredAutoVersioning": "Default",
     "RequiredMods": []
 }
