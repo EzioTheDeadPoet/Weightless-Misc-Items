@@ -11,8 +11,8 @@ namespace SlotsSlotsSlots
     {   
         [SynthesisOrder]
         [SynthesisSettingName("Weigthless items can't heal")]
-        [SynthesisDescription("This disables the healing effect from any item that isn't a potion, as they have 0 weight.")]
-        [SynthesisTooltip("This disables the healing effect from any item that isn't a potion, as they have 0 weight.")]
-        public bool WeightlessItemsOfferNoHealing = true;
+        [SynthesisDescription("This disables the healing effect from any item that isn't a potion, and makes it impossible to brew healing potions yourself, you gotta buy them or find them.")]
+        [SynthesisTooltip("This disables the healing effect from any item that isn't a potion, and makes it impossible to brew healing potions yourself, you gotta buy them or find them.")]
+        public bool WeightlessItemsOfferNoHealing = false;
     }
 }
