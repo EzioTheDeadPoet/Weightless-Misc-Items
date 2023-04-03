@@ -1,4 +1,4 @@
-# Wheightless Misc Items
+# Weightless Misc Items
 
 ## What is this ?
 
